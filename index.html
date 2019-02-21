@@ -1,0 +1,347 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coding Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+  .parallax {
+    /* The image used */
+    background-image: url('https://wallpapercave.com/wp/GmIk0Cb.jpg');
+
+    /* Full height */
+    height: 100%; 
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    ul {
+    padding: 4%;
+    background: rgba(81, 145, 144, 0.31);
+}
+
+#c1, #c2, #c3 {
+    width: 33%; // 1/3 of 100%
+}
+
+.container {
+    position: relative;
+    font-family: Arial;
+}
+
+
+*{
+    margin:0; 
+    padding:0;
+}
+
+#wrapper{
+    display:-webkit-flex;
+    -webkit-justify-content:center;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+#wrapper div{
+    -webkit-flex:1;
+    flex:1;
+    border:thin solid #777;
+
+}
+
+.text-block {
+    position: absolute;
+    top: 34%;
+    right: 10px;
+    background-color: rgba(0, 83, 145, 0.47);
+    color: #f0f2f4;
+    padding: 5%;
+    width: 94%;
+}
+    
+    li{
+    	color: #fff;
+    	list-style: none;
+    }
+    
+    
+    body{
+    	color: #fff;
+    }
+    .main{
+    display:inline;
+}
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: rgba(30, 117, 163, 0.55)!important;
+}
+    
+    .w3-white, .w3-hover-white:hover {
+    color: #02eeff!important;
+    background-color: rgba(0, 0, 0, 0)!important;
+    
+    
+    
+    .transition { 
+    background-image: url('https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0028/blurred-lines-duvet-cover-shams-1-m.jpg');
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 6s;
+    }
+    @keyframes example {
+    0%   {background-image: url('https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0028/blurred-lines-duvet-cover-shams-1-m.jpg');}
+    25%  {background-image: url('https://www.westelm.com/weimgs/rk/images/wcm/products/201801/0004/tencel-aurora-duvet-cover-shams-light-pool-m.jpg');}
+    50%  {background-image: url('https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/belgian-flax-linen-fiber-dyed-duvet-cover-shams-light-pool-m.jpg');}
+    100% {background-image: url('https://www.westelm.com/weimgs/rk/images/wcm/products/201802/0010/organic-washed-cotton-stripe-duvet-cover-shams-kyoto-blue-m.jpg');}
+}
+}
+}
+    
+  </style>
+</head>
+<body class="parallax" style="height: 100vh;"><header class="w3-container w3-top w3-black w3-xlarge w3-padding-12">
+  <span class="w3-left w3-padding">E-COMMERCE.COM</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index: 3; width: 100%; font-weight: bold; display: none; right: 0px;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PRODUCTS</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CHECKOUT</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+</nav>
+
+
+<div style="background: rgba(0, 0, 0, .52); padding-top: 6%; width: 100%">
+<div class="transition" style=" padding-top: 7%;"><center>
+<input type="text" id="myInput" onkeyup="myFunction1()" placeholder="Search for sheets:" title="Search"></center></div>
+   <div class="transition"><center><h2>All New</h2>
+    <hr style="width: 25%"></center></div>
+    <div style="background: rgba(9, 68, 93, 0.49);padding: 5%;padding-left: 15%;padding-right: 15%;" id="myH3" class="w3-row-padding "><ul class="w3-row-padding" id="myUL" style="list-style: none;"><div class="wrapper"><center>
+ <script>
+ 
+ var jcontent = [{"id":"shop/new/all-new","name":"All New","groups":[{"id":"organic-washed-cotton-stripe-duvet-cover-shams-kyoto-blue-b2278","name":"Organic Washed Cotton Stripe Duvet Cover + Shams - Kyoto Blue","links":{"www":"https://www.westelm.com/products/organic-washed-cotton-stripe-duvet-cover-shams-kyoto-blue-b2278/"},"priceRange":{"regular":{"high":159,"low":34},"selling":{"high":119,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201802/0010/organic-washed-cotton-stripe-duvet-cover-shams-kyoto-blue-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201802/0010/organic-washed-cotton-stripe-duvet-cover-shams-kyoto-blue-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-washed-cotton-stripe-duvet-cover-shams-kyoto-blue-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201802/0011/organic-washed-cotton-stripe-duvet-cover-shams-kyoto-blue-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/organic-washed-cotton-stripe-duvet-cover-shams-kyoto-blue-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-washed-cotton-stripe-duvet-cover-shams-slate-3-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-washed-cotton-stripe-duvet-cover-shams-kyoto-blue-1-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-washed-cotton-stripe-duvet-cover-shams-slate-m.jpg","height":363}]},{"id":"organic-washed-cotton-stripe-duvet-cover-shams-slate-b2279","name":"Organic Washed Cotton Stripe Duvet Cover + Shams - Slate","links":{"www":"https://www.westelm.com/products/organic-washed-cotton-stripe-duvet-cover-shams-slate-b2279/"},"priceRange":{"regular":{"high":159,"low":34},"selling":{"high":119,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201802/0010/organic-washed-cotton-stripe-duvet-cover-shams-slate-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201802/0010/organic-washed-cotton-stripe-duvet-cover-shams-slate-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/organic-washed-cotton-stripe-duvet-cover-shams-slate-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201802/0011/organic-washed-cotton-stripe-duvet-cover-shams-slate-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0012/organic-washed-cotton-stripe-duvet-cover-shams-slate-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-washed-cotton-stripe-duvet-cover-shams-slate-4-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-washed-cotton-stripe-duvet-cover-shams-slate-2-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-washed-cotton-stripe-duvet-cover-shams-slate-6-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-washed-cotton-stripe-duvet-cover-shams-slate-5-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-washed-cotton-stripe-duvet-cover-shams-slate-m.jpg","height":363}]},{"id":"linen-cotton-jacquard-stripe-duvet-cover-shams-b2282","name":"Linen Cotton Jacquard Stripe Duvet Cover + Shams","links":{"www":"https://www.westelm.com/products/linen-cotton-jacquard-stripe-duvet-cover-shams-b2282/"},"priceRange":{"regular":{"high":249,"low":44},"selling":{"high":186,"low":33},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/linen-cotton-jacquard-stripe-duvet-cover-shams-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/linen-cotton-jacquard-stripe-duvet-cover-shams-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/linen-cotton-jacquard-stripe-duvet-cover-shams-1-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0018/linen-cotton-jacquard-stripe-duvet-cover-shams-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0013/linen-cotton-jacquard-stripe-duvet-cover-shams-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/linen-cotton-jacquard-stripe-duvet-cover-shams-2-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/linen-cotton-jacquard-stripe-duvet-cover-shams-3-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/linen-cotton-jacquard-stripe-duvet-cover-shams-m.jpg","height":363}]},{"id":"belgian-flax-linen-fiber-dyed-duvet-cover-shams-light-pool-b2287","name":"Belgian Flax Linen Fiber Dyed Duvet Cover + Shams - Light Pool","links":{"www":"https://www.westelm.com/products/belgian-flax-linen-fiber-dyed-duvet-cover-shams-light-pool-b2287/"},"price":{"regular":44,"selling":33,"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/belgian-flax-linen-fiber-dyed-duvet-cover-shams-light-pool-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/belgian-flax-linen-fiber-dyed-duvet-cover-shams-light-pool-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/belgian-flax-linen-fiber-dyed-duvet-cover-shams-light-pool-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/linen-cotton-jacquard-stripe-duvet-cover-shams-m.jpg","height":363}]},{"id":"tencel-aurora-duvet-cover-shams-light-pool-b2347","name":"TENCEL&#174; Aurora Duvet Cover + Shams - Light Pool","links":{"www":"https://www.westelm.com/products/tencel-aurora-duvet-cover-shams-light-pool-b2347/"},"priceRange":{"regular":{"high":149,"low":29},"selling":{"high":111,"low":21},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201801/0004/tencel-aurora-duvet-cover-shams-light-pool-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201801/0004/tencel-aurora-duvet-cover-shams-light-pool-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201801/0007/tencel-aurora-duvet-cover-shams-light-pool-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201751/0004/tencel-aurora-duvet-cover-shams-light-pool-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0025/tencel-aurora-duvet-cover-shams-light-pool-1-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0025/tencel-aurora-duvet-cover-shams-light-pool-m.jpg","height":363}]},{"id":"organic-pleated-grid-duvet-cover-shams-white-b2293","name":"Organic Pleated Grid Duvet Cover + Shams - White","links":{"www":"https://www.westelm.com/products/organic-pleated-grid-duvet-cover-shams-white-b2293/"},"priceRange":{"regular":{"high":199,"low":34},"selling":{"high":149,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-pleated-grid-duvet-cover-shams-2-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-pleated-grid-duvet-cover-shams-2-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-pleated-grid-duvet-cover-shams-white-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/organic-pleated-grid-duvet-cover-shams-white-m.jpg","height":363}]},{"id":"organic-pleated-grid-duvet-cover-shams-pink-blush-b2294","name":"Organic Pleated Grid Duvet Cover + Shams - Pink Blush","links":{"www":"https://www.westelm.com/products/organic-pleated-grid-duvet-cover-shams-pink-blush-b2294/"},"priceRange":{"regular":{"high":199,"low":34},"selling":{"high":149,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0036/organic-pleated-grid-duvet-cover-shams-pink-blush-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0036/organic-pleated-grid-duvet-cover-shams-pink-blush-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0035/organic-pleated-grid-duvet-cover-shams-pink-blush-m.jpg","height":363}]},{"id":"organic-rolling-dot-duvet-cover-shams-b2219","name":"Organic Rolling Dot Duvet Cover + Shams","links":{"www":"https://www.westelm.com/products/organic-rolling-dot-duvet-cover-shams-b2219/"},"priceRange":{"regular":{"high":129,"low":29},"selling":{"high":111,"low":21},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0025/organic-rolling-dot-duvet-cover-shams-2-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0025/organic-rolling-dot-duvet-cover-shams-2-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0025/organic-rolling-dot-duvet-cover-shams-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0025/organic-rolling-dot-duvet-cover-shams-1-m.jpg","height":363}]},{"id":"organic-geo-waffle-jacquard-duvet-cover-shams-white-b2291","name":"Organic Geo Waffle Jacquard Duvet Cover + Shams - White","links":{"www":"https://www.westelm.com/products/organic-geo-waffle-jacquard-duvet-cover-shams-white-b2291/"},"priceRange":{"regular":{"high":179,"low":34},"selling":{"high":134,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/organic-geo-waffle-jacquard-duvet-cover-shams-white-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/organic-geo-waffle-jacquard-duvet-cover-shams-white-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-geo-waffle-jacquard-duvet-cover-shams-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0011/organic-geo-waffle-jacquard-duvet-cover-shams-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0037/organic-geo-waffle-jacquard-bedding-look-shop-by-look-1-m.jpg","height":363}]},{"id":"organic-geo-waffle-jacquard-duvet-cover-shams-platinum-b2292","name":"Organic Geo Waffle Jacquard Duvet Cover + Shams - Platinum","links":{"www":"https://www.westelm.com/products/organic-geo-waffle-jacquard-duvet-cover-shams-platinum-b2292/"},"priceRange":{"regular":{"high":179,"low":34},"selling":{"high":134,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-geo-waffle-jacquard-duvet-cover-shams-platinum-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-geo-waffle-jacquard-duvet-cover-shams-platinum-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-geo-waffle-jacquard-duvet-cover-shams-2-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-geo-waffle-jacquard-duvet-cover-shams-platinum-1-m.jpg","height":363}]},{"id":"organic-dobby-ladder-stripe-duvet-cover-shams-midnight-b2288","name":"Organic Dobby Ladder Stripe Duvet Cover + Shams - Midnight","links":{"www":"https://www.westelm.com/products/organic-dobby-ladder-stripe-duvet-cover-shams-midnight-b2288/"},"priceRange":{"regular":{"high":179,"low":34},"selling":{"high":134,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0002/organic-dobby-ladder-stripe-duvet-cover-shams-midnight-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0002/organic-dobby-ladder-stripe-duvet-cover-shams-midnight-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0034/organic-dobby-ladder-stripe-duvet-cover-shams-midnight-m.jpg","height":363}]},{"id":"organic-dobby-ladder-stripe-duvet-cover-shams-pink-blush-b2289","name":"Organic Dobby Ladder Stripe Duvet Cover + Shams - Pink Blush","links":{"www":"https://www.westelm.com/products/organic-dobby-ladder-stripe-duvet-cover-shams-pink-blush-b2289/"},"priceRange":{"regular":{"high":179,"low":34},"selling":{"high":134,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0003/organic-dobby-ladder-stripe-duvet-cover-shams-pink-blush-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0003/organic-dobby-ladder-stripe-duvet-cover-shams-pink-blush-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0036/organic-dobby-ladder-stripe-duvet-cover-shams-pink-blush-m.jpg","height":363}]},{"id":"organic-bali-clipped-jacquard-duvet-cover-shams-b2283","name":"Organic Bali Clipped Jacquard Duvet Cover + Shams","links":{"www":"https://www.westelm.com/products/organic-bali-clipped-jacquard-duvet-cover-shams-b2283/"},"priceRange":{"regular":{"high":179,"low":34},"selling":{"high":134,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-bali-clipped-jacquard-duvet-cover-shams-1-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-bali-clipped-jacquard-duvet-cover-shams-1-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/organic-bali-clipped-jacquard-duvet-cover-shams-1-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0014/organic-bali-clipped-jacquard-duvet-cover-shams-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/organic-bali-clipped-jacquard-duvet-cover-shams-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0002/organic-bali-clipped-jacquard-duvet-cover-shams-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0001/emmerson-modern-reclaimed-wood-bed-carbon-4-m.jpg","height":363}]},{"id":"roar-rabbit-organic-clipped-stripe-duvet-cover-shams-b2281","name":"Roar + Rabbit&#8482; Organic Clipped Stripe Duvet Cover + Shams","links":{"www":"https://www.westelm.com/products/roar-rabbit-organic-clipped-stripe-duvet-cover-shams-b2281/"},"priceRange":{"regular":{"high":179,"low":34},"selling":{"high":134,"low":27},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0003/roar-rabbit-organic-clipped-stripe-duvet-cover-shams-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0003/roar-rabbit-organic-clipped-stripe-duvet-cover-shams-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0036/roar-rabbit-organic-clipped-stripe-duvet-cover-shams-m.jpg","height":363}]},{"id":"organic-dobby-dot-duvet-cover-shams-platinum-b2280","name":"Organic Dobby Dot Duvet Cover + Shams - Platinum","links":{"www":"https://www.westelm.com/products/organic-dobby-dot-duvet-cover-shams-platinum-b2280/"},"priceRange":{"regular":{"high":159,"low":34},"selling":{"high":119,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0002/organic-dobby-dot-duvet-cover-shams-platinum-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0002/organic-dobby-dot-duvet-cover-shams-platinum-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0036/organic-dobby-dot-duvet-cover-shams-platinum-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0035/organic-dobby-dot-duvet-cover-shams-platinum-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0037/organic-dobby-dot-duvet-cover-shams-platinum-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0025/organic-dobby-dot-duvet-cover-shams-platinum-1-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0025/organic-dobby-dot-duvet-cover-shams-platinum-m.jpg","height":363}]},{"id":"organic-solid-washed-cotton-duvet-cover-shams-b2344","name":"Organic Solid Washed Cotton Duvet Cover + Shams - Stone White","links":{"www":"https://www.westelm.com/products/organic-solid-washed-cotton-duvet-cover-shams-b2344/"},"priceRange":{"regular":{"high":129,"low":29},"selling":{"high":129,"low":23},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0004/organic-solid-washed-cotton-duvet-cover-shams-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0004/organic-solid-washed-cotton-duvet-cover-shams-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0037/organic-solid-washed-cotton-duvet-cover-shams-m.jpg","height":363}]},{"id":"blurred-lines-duvet-cover-shams-b2336","name":"Blurred Lines Duvet Cover + Shams","links":{"www":"https://www.westelm.com/products/blurred-lines-duvet-cover-shams-b2336/"},"priceRange":{"regular":{"high":149,"low":29},"selling":{"high":119,"low":23},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0028/blurred-lines-duvet-cover-shams-1-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0028/blurred-lines-duvet-cover-shams-1-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0028/blurred-lines-duvet-cover-shams-m.jpg","height":363}]},{"id":"floral-bouquet-duvet-cover-shams-midnight-b2339","name":"Floral Bouquet Duvet Cover + Shams - Midnight","links":{"www":"https://www.westelm.com/products/floral-bouquet-duvet-cover-shams-midnight-b2339/"},"priceRange":{"regular":{"high":149,"low":29},"selling":{"high":103,"low":23},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0029/floral-bouquet-duvet-cover-shams-midnight-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0029/floral-bouquet-duvet-cover-shams-midnight-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201750/0028/floral-bouquet-duvet-cover-shams-midnight-m.jpg","height":363}]},{"id":"organic-double-cloth-triangle-blanket-frost-gray-b2320","name":"Organic Double Cloth Triangle Blanket - Frost Gray","links":{"www":"https://www.westelm.com/products/organic-double-cloth-triangle-blanket-frost-gray-b2320/"},"priceRange":{"regular":{"high":179,"low":149},"selling":{"high":134,"low":111},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0004/organic-double-cloth-triangle-blanket-frost-gray-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0004/organic-double-cloth-triangle-blanket-frost-gray-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0037/organic-double-cloth-triangle-blanket-frost-gray-2-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0037/organic-double-cloth-triangle-blanket-frost-gray-1-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0037/organic-double-cloth-triangle-blanket-frost-gray-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0035/organic-double-cloth-arrow-blanket-frost-gray-m.jpg","height":363}]},{"id":"organic-double-cloth-arrow-blanket-frost-gray-b2309","name":"Organic Double Cloth Arrow Blanket - Frost Gray","links":{"www":"https://www.westelm.com/products/organic-double-cloth-arrow-blanket-frost-gray-b2309/"},"priceRange":{"regular":{"high":179,"low":149},"selling":{"high":134,"low":111},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0004/organic-double-cloth-arrow-blanket-frost-gray-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0004/organic-double-cloth-arrow-blanket-frost-gray-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0034/organic-double-cloth-arrow-blanket-frost-gray-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0035/organic-double-cloth-arrow-blanket-frost-gray-m.jpg","height":363}]},{"id":"nomad-coverlet-horseradish-b1361","name":"Nomad Coverlet + Shams - Horseradish","links":{"www":"https://www.westelm.com/products/nomad-coverlet-horseradish-b1361/"},"priceRange":{"regular":{"high":179,"low":139},"selling":{"high":134,"low":104},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0003/nomad-coverlet-shams-horseradish-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0003/nomad-coverlet-shams-horseradish-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0037/nomad-coverlet-shams-horseradish-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0034/nomad-coverlet-shams-horseradish-m.jpg","height":363}]},{"id":"nomad-coverlet-shams-dusty-guava-b1218","name":"Nomad Coverlet + Shams - Dusty Guava","links":{"www":"https://www.westelm.com/products/nomad-coverlet-shams-dusty-guava-b1218/"},"priceRange":{"regular":{"high":179,"low":34},"selling":{"high":134,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0001/nomad-coverlet-shams-dusty-guava-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0001/nomad-coverlet-shams-dusty-guava-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0055/nomad-coverlet-shams-2-m.jpg","height":363}]},{"id":"nomad-coverlet-shams-deep-sea-t486","name":"Nomad Coverlet - Deep Sea","links":{"www":"https://www.westelm.com/products/nomad-coverlet-shams-deep-sea-t486/"},"priceRange":{"regular":{"high":179,"low":34},"selling":{"high":134,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0002/nomad-coverlet-deep-sea-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201749/0002/nomad-coverlet-deep-sea-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0035/nomad-coverlet-deep-sea-m.jpg","height":363}]},{"id":"organic-dobby-ladder-stripe-coverlet-shams-white-b2306","name":"Organic Dobby Ladder Stripe Coverlet + Shams - White","links":{"www":"https://www.westelm.com/products/organic-dobby-ladder-stripe-coverlet-shams-white-b2306/"},"priceRange":{"regular":{"high":199,"low":34},"selling":{"high":149,"low":25},"type":"special"},"thumbnail":{"size":"m","meta":"","alt":"","rel":"thumbnail","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0034/organic-dobby-ladder-stripe-coverlet-shams-white-m.jpg","height":363},"hero":{"size":"m","meta":"","alt":"","rel":"hero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0034/organic-dobby-ladder-stripe-coverlet-shams-white-m.jpg","height":363},"images":[{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0035/organic-dobby-ladder-stripe-coverlet-shams-white-m.jpg","height":363},{"size":"m","meta":"","alt":"","rel":"althero","width":363,"href":"https://www.westelm.com/weimgs/rk/images/wcm/products/201748/0036/organic-dobby-ladder-stripe-coverlet-shams-white-m.jpg","height":363}]}]}];
+ 
+ 
+ </script>
+
+
+<script>
+	/*
+	for (i=0; i < 40000; i++)
+	{
+	for (n=1; n < 4; n++){
+	//document.write('<center>'+'<h2>'+jcontent[i].name+'</h2>'+'</center>');
+	document.write('<img src='+jcontent[i].groups[n].thumbnail.href+ '>'+'</img>');
+	//document.write('<img src='+jcontent[i].groups[n].hero.href+ '>'+'</img>');
+	document.write('<img src='+jcontent[i].groups[n].images[i].href+ '>'+'</img>');
+	document.write('<img src='+jcontent[i].groups[n].images[n].href+ '>'+'</img>');
+	//document.write('<h1>'+jcontent[i].id+'</h1>');
+	//document.write('<h3>'+jcontent[i].groups[n].id+'</h3>');
+	document.write('<h3>'+jcontent[i].groups[n].name+'</h3>');
+	//document.write('<h3>'+jcontent[i].groups[1].links+'</h3>');
+	document.write('<h3>'+'$'+jcontent[i].groups[n].priceRange.regular.low+' - '+jcontent[i].groups[n].priceRange.regular.high+'</h3>');
+	//document.write('<h3>'+'$'+jcontent[i].groups[1].priceRange.regular.low+'</h3>');
+	document.write('<h3>'+'$'+jcontent[i].groups[n].priceRange.selling.low+' - '+jcontent[i].groups[n].priceRange.selling.high+'</h3>');
+	//document.write('<h3>'+'$'+jcontent[i].groups[1].priceRange.selling.low+'</h3>');
+	//document.write('<h3>'+jcontent[i].groups[1].thumbnail.href+'</h3>');
+	
+	}
+	}
+	*/
+</script>
+
+<script>
+	/*
+	for (i=0; i < 4; i++)
+	{
+	for (n=3; n < 4; n++){
+	//document.write('<center>'+'<h2>'+jcontent[i].name+'</h2>'+'</center>');
+	//document.write('<img src='+jcontent[i].groups[n].thumbnail.href+ ' '+ 'onclick=' '"onClick(this)"'+'>'+'</img>');
+	//document.write('<img src='+jcontent[i].groups[n].hero.href+ '>'+'</img>');
+	//document.write('<img src='+jcontent[i].groups[n].images[i].href+ '>'+'</img>');
+	//document.write('<img src='+jcontent[i].groups[n].images[n].href+ '>'+'</img>');
+	//document.write('<h1>'+jcontent[i].id+'</h1>');
+	//document.write('<h3>'+'<a href='+'#'+'>'+jcontent[i].groups[n].id+'</h3>');
+	document.write('<h3>'+'<a href='+'#'+'>'+jcontent[i].groups[n].name+'</a>'+'</h3>');
+	//document.write('<h3>'+jcontent[i].groups[1].links+'</h3>');
+	document.write('<h3>'+'$'+jcontent[i].groups[n].price.regular+'</h3>');
+	//document.write('<h3>'+'$'+jcontent[i].groups[1].price.regular.low+'</h3>');
+	document.write('<h3>'+'$'+jcontent[i].groups[n].price.selling+'</h3>');
+	//document.write('<h3>'+'$'+jcontent[i].groups[1].price.selling+'</h3>');
+	//document.write('<h3>'+jcontent[i].groups[1].thumbnail.href+'</h3>');
+	
+	}
+	}
+	*/
+</script>
+<script>
+	/*
+	for (i=0; i < 40000; i++)
+	{
+	for (n=4; n < 40001; n++){
+	//document.write('<center>'+'<h2>'+jcontent[i].name+'</h2>'+'</center>');
+	document.write('<img src='+jcontent[i].groups[n].thumbnail.href+ '>'+'</img>');
+	//document.write('<img src='+jcontent[i].groups[n].hero.href+ '>'+'</img>');
+	//document.write('<img src='+jcontent[i].groups[n].images[i].href+ '>'+'</img>');
+	document.write('<img src='+jcontent[i].groups[n].images[n].href+ '>'+'</img>');
+	//document.write('<h1>'+jcontent[i].id+'</h1>');
+	//document.write('<h3>'+jcontent[i].groups[n].id+'</h3>');
+	document.write('<h3>'+'<a href='+'#'+'>'+jcontent[i].groups[n].name+'</a>'+'</h3>');
+	//document.write('<h3>'+jcontent[i].groups[1].links+'</h3>');
+	document.write('<h3>'+'$'+jcontent[i].groups[n].priceRange.regular.low+' - '+jcontent[i].groups[n].priceRange.regular.high+'</h3>');
+	//document.write('<h3>'+'$'+jcontent[i].groups[1].priceRange.regular.low+'</h3>');
+	document.write('<h3>'+'$'+jcontent[i].groups[n].priceRange.selling.low+' - '+jcontent[i].groups[n].priceRange.selling.high+'</h3>');
+	//document.write('<h3>'+'$'+jcontent[i].groups[1].priceRange.selling.low+'</h3>');
+	//document.write('<h3>'+jcontent[i].groups[1].thumbnail.href+'</h3>');
+	
+	}
+	}
+	*/
+</script>
+
+
+<script>
+	
+	for (i=0; i < 400; i++)
+	{
+	for (n=0; n < 400; n++){
+	document.write('<div class='+'"w3-quarter w3-margin-bottom"'+'>');
+	//document.write('<img src='+jcontent[i].groups[n].thumbnail.href+' style='+'"height: 50%; width: 88%;"'+'>'+'</img>');
+	document.write('<div class='+'"container"'+'>');
+	document.write('<img src='+jcontent[i].groups[n].thumbnail.href+ ' style='+'"height: 50%; width: 88%;""'+'>' + '</img>');
+	document.write('<div class='+'"text-block"'+'> <h4>'+(n+1)+'.</h4> <p>'+jcontent[i].groups[n].name+'</p> </div>');
+	document.write('<button class='+'"w3-button w3-white w3-padding-large w3-hover-black"'+' onclick='+'"document.getElementById('+'"pop-up"'+').style.display='+'"block""'+'><i class='+'"fa fa-cart-plus"'+' style='+''+'></i>  View </button>');
+	
+	//document.write('<li>'+'<img src='+"'"+jcontent[i].groups[n].images[i].href+"'"+ '>'+'</img>'+'</li>');
+	//document.write('<a href='+'#'+'>'+'<li>'+jcontent[i].groups[n].name+'</li>'+'</a>');
+	document.write('</div>');
+	document.write('</div>');
+	//document.write('<h3>'+jcontent[i].groups[1].links+'</h3>');
+	//document.write('<h3>'+'$'+jcontent[i].groups[n].priceRange.regular.low+' - '+jcontent[i].groups[n].priceRange.regular.high+'</h3>');
+	//document.write('<h3>'+'$'+jcontent[i].groups[1].priceRange.regular.low+'</h3>');
+	//document.write('<h3>'+'$'+jcontent[i].groups[n].priceRange.selling.low+' - '+jcontent[i].groups[n].priceRange.selling.high+'</h3>'
+	//document.write('<h3>'+jcontent[i].groups[1].thumbnail.href+'</h3>');
+	
+	}
+	 
+	}
+	
+</script>
+
+
+
+
+    
+
+ 
+  
+</div></center><ul></ul></div></ul></div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+<script>
+function myFunction1() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+ 
+
+<footer style="background-color: rgba(0, 154, 215, 0.41); padding: 15%">
+            
+            <center><p style="padding-bottom: 35px"> Powered By <a href="#">Yoursite.com</a></p></center>
+    
+    <ul><center><li><a href="#">about us</a></li>
+        <li><a href="#">products</a></li>
+        <li><a href="#">Contact</a></li></center>
+    </ul>
+        </footer></div></body>
+        
+        
+        <div id="organic washed cotton stripe duvet cover + shams - kyoto blue" class="w3-modal w3-animate-opacity" style="display: block;">
+  <div class="w3-modal-content " style="padding:32px;background-color: rgba(0, 115, 173, 0.34);color: #ffffff;">
+    <div class="w3-container" style="background-color: rgba(27, 100, 136, 0.7);color: #ffffff;">
+	
+	<!--<img src="logo.png">
+      --><i onclick="document.getElementById('organic washed cotton stripe duvet cover + shams - kyoto blue').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide w3-text-white">E-COMMERCE.COM</h2>
+      <p style="background-color: rgba(173, 119, 0, 0);color: #ffffff;">E-COMMERCE.COM specilizes in selling sheets, furniture, and miscalleneous home goods. Feel free to subscribe to our email list for coupons and updates here! </p>
+      <form action="/message.php" target="_blank" method="post">
+      <p><input class="w3-input w3-white w3-border" type="text" placeholder="Enter Name" required="" name="Name"></p>
+      <p><input class="w3-input w3-white w3-border" type="email" placeholder="Enter e-mail" required="" name="Emaill"></p>
+      
+      
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-white w3-margin-bottom" onclick="document.getElementById('organic washed cotton stripe duvet cover + shams - kyoto blue').style.display='none'">Send</button></form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id=" pop-up" class="w3-modal w3-animate-opacity" >
+  <div class="w3-modal-content " style="padding:32px;background-color: rgba(0, 115, 173, 0.34);color: #ffffff;">
+    <div class="w3-container" style="background-color: rgba(27, 100, 136, 0.7);color: #ffffff;">
+	
+	<!--<img src="logo.png">
+      --><i onclick="document.getElementById(' pop-up').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide w3-text-white">E-COMMERCE.COM</h2>
+      <p style="background-color: rgba(173, 119, 0, 0);color: #ffffff;">E-COMMERCE.COM specilizes in selling sheets, furniture, and miscalleneous home goods. Feel free to subscribe to our email list for coupons and updates here! </p>
+      <form action="/message.php" target="_blank" method="post">
+      <p><input class="w3-input w3-white w3-border" type="text" placeholder="Enter Name" required="" name="Name"></p>
+      <p><input class="w3-input w3-white w3-border" type="email" placeholder="Enter e-mail" required="" name="Emaill"></p>
+      
+      
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-white w3-margin-bottom" onclick="document.getElementById(' pop-up').style.display='none'">Send</button></form>
+    </div>
+  </div>
+</div>
+        </html>
